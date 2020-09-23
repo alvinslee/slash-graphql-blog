@@ -9,8 +9,9 @@ npm install -g @vue/cli
 ```
 
 ## Pull down this code repository
-
+```
 git clone https://github.com/alvinslee/slash-graphql-vue-blog.git
+```
 
 ## Make sure you have Apollo GraphQL Server running
 
