@@ -1,16 +1,15 @@
 # slash-graphql-vue-blog
 This is a public project with a quick-and-dirty Vue.JS client to demonstrate fetching data with a GraphQL request made to an Apollo GraphQL Server, which in turn makes a request of Slash GraphQL
 
-## Install vue-cli
-
-If you don't already have @vue/cli installed, do this:
-```
-npm install -g @vue/cli
-```
-
 ## Pull down this code repository
 ```
 git clone https://github.com/alvinslee/slash-graphql-vue-blog.git
+```
+
+## Install all packages
+```
+cd slash-graphql-vue-blog
+npm install
 ```
 
 ## Make sure you have Apollo GraphQL Server running
