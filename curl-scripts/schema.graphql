@@ -1,0 +1,21 @@
+type User {
+  email: String! @id @search(by: [hash])
+  name: String @search(by: [exact])
+  posts: [Post] @hasInverse(field: user)
+}
+
+type Post {
+  id: ID!
+  title: String! @search(by: [fulltext])
+  body: String!
+  image: String
+  user: User!
+  comments: [Comment] @hasInverse(field: post)
+}
+
+type Comment {
+  id: ID!
+  body: String!
+  user: User!
+  post: Post!
+}

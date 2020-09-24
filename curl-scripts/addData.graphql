@@ -1,0 +1,28 @@
+mutation {
+  addPost(input: [
+    {
+      user: {
+        name: "Burk Dronsfield",
+        email: "bdronsfield0@apple.com"
+      },
+      title: "Scallops - 10/20",
+      image: "https://picsum.photos/id/441/600/300",
+      body: "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
+      comments: [
+        {
+          body: "First post!",
+          user: {
+            email: "tgodleman1@chronoengine.com",
+            name: "Tamar Godleman"
+          }
+        }
+      ]
+    }
+  ])
+  {
+    post {
+      id
+      title
+    }
+  }
+}
