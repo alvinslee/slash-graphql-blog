@@ -1,5 +1,5 @@
 type User {
-  email: String! @id @search(by: [hash])
+  email: String! @id
   name: String @search(by: [exact])
   posts: [Post] @hasInverse(field: user)
 }
